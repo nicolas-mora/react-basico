@@ -1,10 +1,11 @@
 import React, { useState } from "react";
-import { Button, Form } from "react-bootstrap";
+import { Button, Form, Card } from "react-bootstrap";
+import Container from "../../shared/components/container/container";
 function HookState() {
   const [text, setText] = useState("Default value");
 
   return (
-    <div>
+    <Container>
       <Form>
         <Form.Group>
           <Form.Label>Email address</Form.Label>
@@ -16,9 +17,9 @@ function HookState() {
             El texto ingresado es: {text}
           </Form.Text>
         </Form.Group>
-        <Button onClick={() => setText("Texto modificado")}>Click me</Button>
+        <Button onClick={() => alert(text)}>Click me</Button>
       </Form>
-    </div>
+    </Container>
   );
 }
 
