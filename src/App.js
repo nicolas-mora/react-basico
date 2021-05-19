@@ -8,6 +8,7 @@ import HookState from "./components/HookState/HookState";
 import AnotherComponent from './components/AnotherComponent/AnotherComponent';
 import AnotherComponentCopy from "./components/AnotherComponentCopy/AnotherComponentCopy";
 import Conditional from "./components/Conditional/Conditional";
+import Login from './components/Login/Login'
 
 export default function App() {
   return (
@@ -19,6 +20,7 @@ export default function App() {
           <Nav.Link href="/another">Another</Nav.Link>
           <Nav.Link href="/anotherCopy">Pricing</Nav.Link>
           <Nav.Link href="/conditional">Conditional</Nav.Link>
+          <Nav.Link href="/login">Login</Nav.Link>
         </Nav>
       </Navbar>
       <Router>
@@ -35,6 +37,9 @@ export default function App() {
           <Route path="/conditional">
             <Conditional isLogged={true}/>
             <Conditional isLogged={false}/>
+          </Route>
+          <Route path="/login">
+            <Login />
           </Route>
         </Switch>
       </Router>

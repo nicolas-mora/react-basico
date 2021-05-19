@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button, Form, Card } from "react-bootstrap";
+import { Button, Form } from "react-bootstrap";
 import Container from "../../shared/components/container/container";
 function HookState() {
   const [text, setText] = useState("Default value");

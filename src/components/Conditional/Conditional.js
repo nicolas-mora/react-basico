@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 
 
-const Conditional = ( props ) => {
+const Conditional = (props) => {
   console.log(props.isLogged)
 
   const Welcome = () => {
@@ -17,7 +17,7 @@ const Conditional = ( props ) => {
   }
   return (
     <Fragment>
-      {props.isLogged 
+      {props.isLogged
         ? <Welcome />
         : <Login />
       }
