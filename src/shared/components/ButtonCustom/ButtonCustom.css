@@ -1,0 +1,18 @@
+.default {
+    border-radius: 5px;
+}
+
+.Error {
+    border-radius: 5px;
+    background-color: red
+}
+
+.Success {
+    border-radius: 5px;
+    background-color: green
+}
+
+.Info {
+    border-radius: 5px;
+    background-color: yellow
+}

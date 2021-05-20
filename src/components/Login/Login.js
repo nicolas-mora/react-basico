@@ -11,7 +11,12 @@ const Login = () => {
         return (
             <Fragment>
                 <h1>Bienvenido, {user} </h1>
-                <Button variant="contained" color="secondary" onClick={() => setLogged(false)}>
+                <Button variant="contained" color="secondary" onClick={() => {
+
+                    setLogged(false)
+                    setUser('')
+                    setPassword('')
+                }}>
                     Cerrar sesion
                 </Button>
             </Fragment>
@@ -32,8 +37,9 @@ const Login = () => {
     return (
         <Fragment>
             <form noValidate autoComplete="off">
-                <TextField onChange={(e) => setUser(e.target.value)} id="standard-basic" label="User" />
+                <TextField value={user} onChange={(e) => setUser(e.target.value)} id="standard-basic" label="User" />
                 <TextField
+                    value={password}
                     id="standard-password-input"
                     label="Password"
                     type="password"
