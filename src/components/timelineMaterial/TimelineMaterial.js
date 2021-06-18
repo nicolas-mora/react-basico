@@ -7,7 +7,7 @@ import TimelineConnector from '@material-ui/lab/TimelineConnector';
 import TimelineContent from '@material-ui/lab/TimelineContent';
 import TimelineDot from '@material-ui/lab/TimelineDot';
 
-function AnotherComponentCopy() {
+function TimelineMaterial() {
 
   return (
     <Container>
@@ -44,4 +44,4 @@ function AnotherComponentCopy() {
   );
 }
 
-export default AnotherComponentCopy;
+export default TimelineMaterial;

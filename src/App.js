@@ -4,13 +4,13 @@ import {
   Navbar,
   Nav,
 } from "react-bootstrap";
-import HookState from "./components/HookState/HookState";
-import AnotherComponent from './components/AnotherComponent/AnotherComponent';
-import AnotherComponentCopy from "./components/AnotherComponentCopy/AnotherComponentCopy";
-import Conditional from "./components/Conditional/Conditional";
-import Login from './components/Login/Login'
-import ButtonCustom from './shared/components/ButtonCustom/ButtonCustom';
-import Effect from './components/Effect/Effect';
+import HookState from "./components/hookState/HookState";
+import ButtonGroupMaterial from './components/buttonGroupMaterial/ButtonGroupMaterial';
+import TimelineMaterial from "./components/timelineMaterial/TimelineMaterial";
+import Conditional from "./components/conditional/Conditional";
+import Login from './components/login/Login'
+import ButtonCustom from './shared/components/nuttonCustom/ButtonCustom';
+import Effect from './components/effect/Effect';
 
 export default function App() {
   return (
@@ -19,8 +19,8 @@ export default function App() {
         <Navbar.Brand href="/">Navbar</Navbar.Brand>
         <Nav className="mr-auto">
           <Nav.Link href="/state">State</Nav.Link>
-          <Nav.Link href="/another">Another</Nav.Link>
-          <Nav.Link href="/anotherCopy">Pricing</Nav.Link>
+          <Nav.Link href="/button-group">ButtonGroup Material</Nav.Link>
+          <Nav.Link href="/timeline">TimeLine Material</Nav.Link>
           <Nav.Link href="/conditional">Conditional</Nav.Link>
           <Nav.Link href="/login">Login</Nav.Link>
           <Nav.Link href="/customelements">Custom Elements</Nav.Link>
@@ -29,14 +29,14 @@ export default function App() {
       </Navbar>
       <Router>
         <Switch>
-          <Route path="/another">
-            <AnotherComponent />
-          </Route>
-          <Route path="/anotherCopy">
-            <AnotherComponentCopy></AnotherComponentCopy>
-          </Route>
           <Route path="/state">
             <HookState incomingText={"Text"} />
+          </Route>
+          <Route path="/button-group">
+            <ButtonGroupMaterial />
+          </Route>
+          <Route path="/timeline">
+            <TimelineMaterial/>
           </Route>
           <Route path="/conditional">
             <Conditional isLogged={true}/>

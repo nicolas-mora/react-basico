@@ -3,7 +3,7 @@ import Container from "../../shared/components/container/container";
 import Button from '@material-ui/core/Button';
 import { ButtonGroup } from "@material-ui/core";
 
-function AnotherComponent() {
+function ButtonGroupMaterial() {
 
   return (
     <Container>
@@ -16,4 +16,4 @@ function AnotherComponent() {
   );
 }
 
-export default AnotherComponent;
+export default ButtonGroupMaterial;

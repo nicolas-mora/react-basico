@@ -30,7 +30,7 @@ const Effect = ( props ) => {
         fetch(baseUrl + props.name)
             .then(response => response.json())
             .then(data => setPokemon(data))
-    });
+    },[props.name]);
 
     const Pokemon = () => {
         return (
